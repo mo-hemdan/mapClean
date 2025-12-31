@@ -1,5 +1,13 @@
 This is a project to build a machine learning based spatial cleaning framework for map data (i.e. GPS points and road networks). 
 
+First, install the environement using the requirements.txt file
+
+```shell 
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 To the run the system, you need first to prepare the dataset. That includes matching the dataset to a road network which is the first step of the spatial data cleaning framework. You can do that with the following command which downloads the road network associated with the area, match the data as well. You need to enter the city name at the top of the file. 
 ```shell
 python 0_preprocess.py
