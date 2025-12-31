@@ -4,6 +4,7 @@ To the run the system, you need first to prepare the dataset. That includes matc
 ```shell
 python 0_preprocess.py
 ```
+Please note that the data has to include the following columns: "trj_id", "rawlat", "rawlng", "pingtimestamp" to perform the map matching. CRS is expected to be in EPSG:4326. 
 
 To run the system you need a config.json file which contains the important parameters needed to run the system. The following was the best parameters we experimented with along with input data characteristics for experimentation
 
@@ -53,3 +54,10 @@ Once the config is prepared. You can run the system using the run_system_on_conf
 ```
 
 All stages of the system will run and results will be reported for rule-based filter, MapClean-P, MapClean-U and MapClean the full version. 
+
+To evaluate the system, you can use the following script which evaluates each part of the experiments reported in the paper. It will generate the figures reported in the paper. 
+```shell
+python 15_generate_error_figures_better.py
+```
+
+If you have any questions, you can direct it to me at ```hemda001@umn.edu```

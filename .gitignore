@@ -59,11 +59,14 @@ venv/
 13*
 14*
 15*
+!15_generate_error_figures_better.py
 16*
 distributed_run.py
 edges.geojson
 exp_figures*
-generate_*
+generate_fig.py
+generate_fig copy.py
+generate_error_functions_old.py
 jakarta_*
 MapMakerLocOnly.py
 missed_folders.txt
